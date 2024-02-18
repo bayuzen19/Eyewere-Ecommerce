@@ -1,0 +1,385 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+		<!-- banner -->
+		<div class="banner">
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="carousel-item active">
+						<div class="carousel-caption text-center">
+							<h3>Men’s eyewear
+								<span>Cool summer sale 50% off</span>
+							</h3>
+							<a href="shop.html" class="btn btn-sm animated-button gibson-three mt-4">Shop Now</a>
+						</div>
+					</div>
+					<div class="carousel-item item2">
+						<div class="carousel-caption text-center">
+							<h3>Women’s eyewear
+								<span>Want to Look Your Best?</span>
+							</h3>
+							<a href="shop.html" class="btn btn-sm animated-button gibson-three mt-4">Shop Now</a>
+
+						</div>
+					</div>
+					<div class="carousel-item item3">
+						<div class="carousel-caption text-center">
+							<h3>Men’s eyewear
+								<span>Cool summer sale 50% off</span>
+							</h3>
+							<a href="shop.html" class="btn btn-sm animated-button gibson-three mt-4">Shop Now</a>
+
+						</div>
+					</div>
+					<div class="carousel-item item4">
+						<div class="carousel-caption text-center">
+							<h3>Women’s eyewear
+								<span>Want to Look Your Best?</span>
+							</h3>
+							<a href="shop.html" class="btn btn-sm animated-button gibson-three mt-4">Shop Now</a>
+						</div>
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			<!--//banner -->
+		</div>
+	</div>
+	<!--//banner-sec-->
+	<section class="banner-bottom-wthreelayouts py-lg-5 py-3">
+		<div class="container-fluid">
+			<div class="inner-sec-shop px-lg-4 px-3">
+                <!---728x90--->
+
+				<h3 class="tittle-w3layouts my-lg-4 my-4">New Arrivals for you </h3>
+                <!---728x90--->
+				<div class="row">
+					<!-- /womens -->
+					{% for product in products %}
+					<div class="col-md-3 product-men women_two">
+						<div class="product-googles-info googles">
+							<div class="men-pro-item">
+								<div class="men-thumb-item">
+									<img src="{{ product.image.url }}" class="img-fluid" alt="">
+									<div class="men-cart-pro">
+										<div class="inner-men-cart-pro">
+											<a href="single.html" class="link-product-add-cart">Quick View</a>
+										</div>
+									</div>
+								</div>
+								<div class="item-info-product">
+									<div class="info-product-price">
+										<div class="grid_meta">
+											<div class="product_price">
+												<h4>
+													<a href="single.html">{{product.name}}</a>
+												</h4>
+												<div class="grid-price mt-2">
+													<span class="money ">${{product.price}}</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					{% endfor %}
+
+				</div>
+				<!-- //womens -->
+				<!--//row-->
+
+                <!---728x90--->
+				<!--/slide-->
+				<div class="slider-img mid-sec">
+					<!--//banner-sec-->
+					<div class="mid-slider">
+						<div class="owl-carousel owl-theme row">
+							<div class="item">
+								<div class="gd-box-info text-center">
+									<div class="product-men women_two bot-gd">
+										<div class="product-googles-info slide-img googles">
+											<div class="men-pro-item">
+												<div class="men-thumb-item">
+													<img src="{% static 'images/s5.jpg' %}" class="img-fluid" alt="">
+													<div class="men-cart-pro">
+														<div class="inner-men-cart-pro">
+															<a href="single.html" class="link-product-add-cart">Quick View</a>
+														</div>
+													</div>
+												</div>
+												<div class="item-info-product">
+
+													<div class="info-product-price">
+														<div class="grid_meta">
+															<div class="product_price">
+																<h4>
+																	<a href="single.html">Fastrack Aviator </a>
+																</h4>
+																<div class="grid-price mt-2">
+																	<span class="money ">$325.00</span>
+																</div>
+															</div>
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="gd-box-info text-center">
+									<div class="product-men women_two bot-gd">
+										<div class="product-googles-info slide-img googles">
+											<div class="men-pro-item">
+												<div class="men-thumb-item">
+													<img src="{% static 'images/s6.jpg' %}" class="img-fluid" alt="">
+													<div class="men-cart-pro">
+														<div class="inner-men-cart-pro">
+															<a href="single.html" class="link-product-add-cart">Quick View</a>
+														</div>
+													</div>
+													<span class="product-new-top">New</span>
+												</div>
+												<div class="item-info-product">
+
+													<div class="info-product-price">
+														<div class="grid_meta">
+															<div class="product_price">
+																<h4>
+																	<a href="single.html">MARTIN Aviator </a>
+																</h4>
+																<div class="grid-price mt-2">
+																	<span class="money ">$425.00</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="gd-box-info text-center">
+									<div class="product-men women_two bot-gd">
+										<div class="product-googles-info slide-img googles">
+											<div class="men-pro-item">
+												<div class="men-thumb-item">
+													<img src="{% static 'images/s7.jpg' %}" class="img-fluid" alt="">
+													<div class="men-cart-pro">
+														<div class="inner-men-cart-pro">
+															<a href="single.html" class="link-product-add-cart">Quick View</a>
+														</div>
+													</div>
+													<span class="product-new-top">New</span>
+												</div>
+												<div class="item-info-product">
+
+													<div class="info-product-price">
+														<div class="grid_meta">
+															<div class="product_price">
+																<h4>
+																	<a href="single.html">Royal Son Aviator </a>
+																</h4>
+																<div class="grid-price mt-2">
+																	<span class="money ">$425.00</span>
+																</div>
+															</div>
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="gd-box-info text-center">
+									<div class="product-men women_two bot-gd">
+										<div class="product-googles-info slide-img googles">
+											<div class="men-pro-item">
+												<div class="men-thumb-item">
+													<img src="{% static 'images/s8.jpg' %}" class="img-fluid" alt="">
+													<div class="men-cart-pro">
+														<div class="inner-men-cart-pro">
+															<a href="single.html" class="link-product-add-cart">Quick View</a>
+														</div>
+													</div>
+													<span class="product-new-top">New</span>
+												</div>
+												<div class="item-info-product">
+
+													<div class="info-product-price">
+														<div class="grid_meta">
+															<div class="product_price">
+																<h4>
+																	<a href="single.html">Irayz Butterfly </a>
+																</h4>
+																<div class="grid-price mt-2">
+																	<span class="money ">$281.00</span>
+																</div>
+															</div>
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="gd-box-info text-center">
+									<div class="product-men women_two bot-gd">
+										<div class="product-googles-info slide-img googles">
+											<div class="men-pro-item">
+												<div class="men-thumb-item">
+													<img src="{% static 'images/s9.jpg' %}" class="img-fluid" alt="">
+													<div class="men-cart-pro">
+														<div class="inner-men-cart-pro">
+															<a href="single.html" class="link-product-add-cart">Quick View</a>
+														</div>
+													</div>
+													<span class="product-new-top">New</span>
+												</div>
+												<div class="item-info-product">
+
+													<div class="info-product-price">
+														<div class="grid_meta">
+															<div class="product_price">
+																<h4>
+																	<a href="single.html">Jerry Rectangular </a>
+																</h4>
+																<div class="grid-price mt-2">
+																	<span class="money ">$525.00</span>
+																</div>
+															</div>
+														</div>
+
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="gd-box-info text-center">
+									<div class="product-men women_two bot-gd">
+										<div class="product-googles-info slide-img googles">
+											<div class="men-pro-item">
+												<div class="men-thumb-item">
+													<img src="{% static 'images/s10.jpg' %}" class="img-fluid" alt="">
+													<div class="men-cart-pro">
+														<div class="inner-men-cart-pro">
+															<a href="single.html" class="link-product-add-cart">Quick View</a>
+														</div>
+													</div>
+													<span class="product-new-top">New</span>
+												</div>
+												<div class="item-info-product">
+
+													<div class="info-product-price">
+														<div class="grid_meta">
+															<div class="product_price">
+																<h4>
+																	<a href="single.html">Herdy Wayfarer </a>
+																</h4>
+																<div class="grid-price mt-2">
+																	<span class="money ">$325.00</span>
+																</div>
+															</div>
+														</div>
+														<div class="googles single-item hvr-outline-out">
+															<form action="#" method="post">
+																<input type="hidden" name="cmd" value="_cart">
+																<input type="hidden" name="add" value="1">
+																<input type="hidden" name="googles_item" value="Herdy Wayfarer">
+																<input type="hidden" name="amount" value="325.00">
+																<button type="submit" class="googles-cart pgoogles-cart">
+																	<i class="fas fa-cart-plus"></i>
+																</button>
+															</form>
+
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- /clients-sec -->
+				<div class="testimonials p-lg-5 p-3 mt-4">
+					<div class="row last-section">
+						<div class="col-lg-3 footer-top-w3layouts-grid-sec">
+							<div class="mail-grid-icon text-center">
+								<i class="fas fa-gift"></i>
+							</div>
+							<div class="mail-grid-text-info">
+								<h3>Genuine Product</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur</p>
+							</div>
+						</div>
+						<div class="col-lg-3 footer-top-w3layouts-grid-sec">
+							<div class="mail-grid-icon text-center">
+								<i class="fas fa-shield-alt"></i>
+							</div>
+							<div class="mail-grid-text-info">
+								<h3>Secure Products</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur</p>
+							</div>
+						</div>
+						<div class="col-lg-3 footer-top-w3layouts-grid-sec">
+							<div class="mail-grid-icon text-center">
+								<i class="fas fa-dollar-sign"></i>
+							</div>
+							<div class="mail-grid-text-info">
+								<h3>Cash on Delivery</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur</p>
+							</div>
+						</div>
+						<div class="col-lg-3 footer-top-w3layouts-grid-sec">
+							<div class="mail-grid-icon text-center">
+								<i class="fas fa-truck"></i>
+							</div>
+							<div class="mail-grid-text-info">
+								<h3>Easy Delivery</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //clients-sec -->
+			</div>
+		</div>
+	</section>
+	<!-- about -->
+{% endblock %}
